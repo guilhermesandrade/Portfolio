@@ -1,0 +1,154 @@
+*{
+
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/*variable colors*/
+
+:root {
+
+  --textcolor: #636366;
+  --bgcolor: #F2F2F7;
+  --bgswitch: #E5E5EA;
+}
+
+.dark {
+
+  --textcolor: #E5E5EA;
+  --bgcolor: #1C1C1E;
+  --bgswitch: #2C2C2E;
+}
+
+/*body*/
+body{
+
+  background-color: var(--bgcolor);
+}
+
+#container{
+
+  margin:auto;
+  width:1000px;
+  padding:10px;
+  /*border: 1px solid greenyellow;*/
+}
+
+/*Top*/
+#top {
+  font-family: 'Hind Madurai', sans-serif;
+  display: inline;
+}
+
+#imgprofile{
+
+  height:160px;
+  border:3px solid #34C759;
+  border-radius: 50%;
+}
+
+#name h1{
+
+  font-weight:300;
+  font-size: 32px;
+  color:var(--textcolor);
+}
+#name img{
+
+  height:28px;
+}
+
+/*Social Medias*/
+#email img{
+
+  height:58px;
+  background: var(--bgswitch);
+  border-radius: 10px;
+  padding:8px;
+ 
+}
+#github img{
+
+  height:58px;
+  background: var(--bgswitch);
+  border-radius: 10px;
+  padding:8px;
+}
+#linkedin img{
+
+ height:58px;
+  background: var(--bgswitch);
+  border-radius: 10px;
+  padding:8px;
+}
+#curriculo img{
+
+  height:58px;
+  background: var(--bgswitch);
+  border-radius: 10px;
+  padding:8px;
+}
+
+/*theme switch*/
+#themeswitch{
+
+  position:relative;
+  width:78px;
+}
+#themeswitch button{
+
+width:33px;
+height:33px;
+background:#AEAEB2;
+border:none;
+border-radius: 50%;
+
+position:absolute;
+top:50%;
+left:7px; /*37px dark*/
+z-index: 1;
+transform: translateY(-50%);
+
+animation: slide-back 0.4s;
+}
+.dark #themeswitch button{
+
+  animation: slide-in 0.4s forwards;
+}
+#themeswitch span{
+
+display:block;
+width: 78px;
+height:44px;
+background: var(--bgswitch);
+border-radius:50px;
+}
+
+/*keyframes for switch animation*/
+@keyframes slide-in {
+
+  from{
+    left:7px;
+  } to{
+    left:50%;
+  }
+}
+@keyframes slide-back {
+
+  from{
+    left:50%;
+  } to{
+    left:7px;
+  }
+}
+
+#line{
+
+ border:1px solid #636366;
+ margin:34px 0px;
+}
+
+/**/
