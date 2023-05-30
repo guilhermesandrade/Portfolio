@@ -1,154 +1,277 @@
-*{
-
-  margin:0px;
-  padding:0px;
-  box-sizing:border-box;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*variable colors*/
 
 :root {
-
   --textcolor: #636366;
-  --bgcolor: #F2F2F7;
-  --bgswitch: #E5E5EA;
+  --bgcolor: #f2f2f7;
+  --bgswitch: #e5e5ea;
+  --iconcolor: #848487;
 }
 
 .dark {
-
-  --textcolor: #E5E5EA;
-  --bgcolor: #1C1C1E;
-  --bgswitch: #2C2C2E;
+  --textcolor: #e5e5ea;
+  --bgcolor: #1c1c1e;
+  --bgswitch: #2c2c2e;
+  --iconcolor: #b7b7bb;
 }
 
 /*body*/
-body{
-
+body {
   background-color: var(--bgcolor);
 }
 
-#container{
-
-  margin:auto;
-  width:1000px;
-  padding:10px;
+#container {
+  margin: auto;
+  width: 1300px;
+  padding: 10px;
   /*border: 1px solid greenyellow;*/
 }
 
 /*Top*/
 #top {
-  font-family: 'Hind Madurai', sans-serif;
-  display: inline;
+  font-family: "Hind Madurai", sans-serif;
+  display: flex;
 }
 
-#imgprofile{
-
-  height:160px;
-  border:3px solid #34C759;
+#imgprofile {
+  height: 160px;
+  border: 3px solid #34c759;
   border-radius: 50%;
+  margin-right: 45px;
 }
 
-#name h1{
+#topmid {
+  align-self: center;
+}
 
-  font-weight:300;
+#name {
+  display: flex;
+  flex-direction: row;
+  height: 32px;
+  margin-bottom: 28px;
+}
+
+#name h1 {
+  display: flex;
+  align-items: center;
+
+  font-weight: 300;
   font-size: 32px;
-  color:var(--textcolor);
+  color: var(--textcolor);
+  margin-right: 5px;
+  height: 32px;
 }
-#name img{
-
-  height:28px;
+#name img {
+  height: 28px;
+  align-self: center;
 }
 
 /*Social Medias*/
-#email img{
-
-  height:58px;
-  background: var(--bgswitch);
-  border-radius: 10px;
-  padding:8px;
- 
+#socialmedias {
+  display: flex;
+  flex-direction: row;
 }
-#github img{
-
-  height:58px;
+#email img {
+  height: 58px;
   background: var(--bgswitch);
   border-radius: 10px;
-  padding:8px;
+  padding: 8px;
+  margin-right: 13px;
 }
-#linkedin img{
-
- height:58px;
+#github1 img {
+  height: 58px;
   background: var(--bgswitch);
   border-radius: 10px;
-  padding:8px;
+  padding: 8px;
+  margin-right: 13px;
 }
-#curriculo img{
-
-  height:58px;
+#linkedin img {
+  height: 58px;
   background: var(--bgswitch);
   border-radius: 10px;
-  padding:8px;
+  padding: 8px;
+  margin-right: 13px;
+}
+#curriculo img {
+  height: 58px;
+  background: var(--bgswitch);
+  border-radius: 10px;
+  padding: 8px;
 }
 
 /*theme switch*/
-#themeswitch{
-
-  position:relative;
-  width:78px;
+#themeswitch {
+  position: relative;
+  width: 78px;
+  height: 44px;
+  margin-left: 50%;
+  display: flex;
+  align-self: center;
 }
-#themeswitch button{
+#themeswitch button {
+  width: 33px;
+  height: 33px;
+  background: #aeaeb2;
+  border: none;
+  border-radius: 50%;
 
-width:33px;
-height:33px;
-background:#AEAEB2;
-border:none;
-border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 7px; /*37px dark*/
+  z-index: 1;
+  transform: translateY(-50%);
 
-position:absolute;
-top:50%;
-left:7px; /*37px dark*/
-z-index: 1;
-transform: translateY(-50%);
-
-animation: slide-back 0.4s;
+  animation: slide-back 0.4s;
 }
-.dark #themeswitch button{
-
+.dark #themeswitch button {
   animation: slide-in 0.4s forwards;
 }
-#themeswitch span{
-
-display:block;
-width: 78px;
-height:44px;
-background: var(--bgswitch);
-border-radius:50px;
+#themeswitch span {
+  display: block;
+  width: 78px;
+  height: 44px;
+  background: var(--bgswitch);
+  border-radius: 50px;
 }
 
 /*keyframes for switch animation*/
 @keyframes slide-in {
-
-  from{
-    left:7px;
-  } to{
-    left:50%;
+  from {
+    left: 7px;
+  }
+  to {
+    left: 50%;
   }
 }
 @keyframes slide-back {
-
-  from{
-    left:50%;
-  } to{
-    left:7px;
+  from {
+    left: 50%;
+  }
+  to {
+    left: 7px;
   }
 }
 
-#line{
-
- border:1px solid #636366;
- margin:34px 0px;
+#line {
+  border: 1px solid #636366;
+  margin: 34px 0px;
 }
 
-/**/
+/*Info*/
+
+#info {
+  font-family: "Hind Madurai", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: 1px solid red;
+}
+
+/*city*/
+#city {
+  display: flex;
+  flex-direction: row;
+  background: var(--bgswitch);
+  width: 210px;
+  height: 63px;
+  border-radius: 20px;
+  margin-left:9px;
+
+  grid-area: 1/1;
+}
+
+#city img {
+  height: 30px;
+  margin: auto 6px auto auto;
+}
+#city p {
+  color: var(--textcolor);
+  margin: auto auto auto 0px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/*hard skills*/
+#hardskills {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  height: 286px;
+  background: var(--bgswitch);
+  border-radius: 20px;
+
+  grid-area:1/2;
+}
+
+#title {
+  display: flex;
+  flex-direction: row;
+  margin: 15px auto 16px;
+}
+#iconhs {
+  align-self: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
+}
+
+#hardskills p {
+  font-size: 32px;
+  font-weight: 400;
+  color: #34c759;
+}
+
+#icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 18px 25px;
+  align-self: center;
+}
+#css {
+  color: var(--iconcolor);
+  width: 50px;
+  height: 50px;
+
+  grid-area: 1/1;
+}
+#html {
+  color: var(--iconcolor);
+  width: 50px;
+  height: 50px;
+
+  grid-area: 1/2;
+}
+#js {
+  color: var(--iconcolor);
+  width: 50px;
+  height: 50px;
+  grid-area: 2/1;
+}
+#github {
+  color: var(--iconcolor);
+  width: 50px;
+  height: 50px;
+  grid-area: 2/2;
+}
+#git {
+  color: var(--iconcolor);
+  width: 50px;
+  height: 50px;
+  grid-area: 3/1;
+}
+#figma {
+  color: var(--iconcolor);
+  width: 50px;
+  height: 50px;
+  grid-area: 3/2;
+}
+
+/*Languages*/
