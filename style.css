@@ -30,7 +30,7 @@ body {
 #container {
   margin: auto;
   width: 1300px;
-  padding: 10px;
+  padding: 16px;
   /*border: 1px solid greenyellow;*/
 }
 
@@ -169,8 +169,9 @@ body {
 #info {
   font-family: "Hind Madurai", sans-serif;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 210px 210px 447px;
+  grid-template-rows: 63px 94px 247px 98px;
+  grid-gap: 18px 41px;
   border: 1px solid red;
 }
 
@@ -182,7 +183,7 @@ body {
   width: 210px;
   height: 63px;
   border-radius: 20px;
-  margin-left:9px;
+  margin-left: 9px;
 
   grid-area: 1/1;
 }
@@ -207,7 +208,7 @@ body {
   background: var(--bgswitch);
   border-radius: 20px;
 
-  grid-area:1/2;
+  grid-area: 1/2;
 }
 
 #title {
@@ -275,3 +276,145 @@ body {
 }
 
 /*Languages*/
+
+#languages {
+  background: var(--bgswitch);
+  width: 210px;
+  height: 94px;
+  border-radius: 20px;
+  margin-left: 9px;
+  grid-area: 2/1;
+}
+
+#langtitle {
+  display: flex;
+  flex-direction: row;
+  margin: 4px 0px 15px;
+}
+
+#langtitle img {
+  height: 30px;
+  width: 30px;
+  align-self: center;
+  margin: auto 6px 0px auto;
+}
+
+#langtitle p {
+  font-size: 32px;
+  font-weight: 400;
+  color: #34c759;
+  height: 32px;
+  margin: 0px auto 0px 0px;
+}
+
+#flags {
+  width: 96px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 16px;
+}
+#flags img {
+  width: 40px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+#br {
+  grid-area: 1/1;
+}
+#usa {
+  grid-area: 1/2;
+}
+
+/*Softskills*/
+
+#softskills {
+  grid-area: 3/1;
+  width: 210px;
+  height: 247px;
+  background: var(--bgswitch);
+  border-radius: 20px;
+  margin-left: 9px;
+}
+
+#softstitle {
+  display: flex;
+  margin: 17px 0px 32px;
+}
+#softstitle img {
+  height: 30px;
+  width: 30px;
+  align-self: center;
+  margin: auto 6px 0px auto;
+}
+#softstitle p {
+  font-size: 32px;
+  font-weight: 400;
+  color: #34c759;
+  height: 32px;
+  margin: 0px auto 0px 0px;
+}
+
+#softskills ul li{
+
+  color:var(--textcolor);
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-bottom:23px;
+}
+
+/*about me*/
+
+#aboutme{
+  background:var(--bgswitch);
+  width:465px;
+  height:299px;
+  border-radius: 20px;
+  grid-area:1/3;
+}
+#aboutme h1{
+
+  margin:8px 0px 7px 19px;
+  font-weight:400;
+  font-size: 40px;
+  color: #34c759;
+}
+#aboutme p{
+
+  font-weight: 400;
+  font-size: 15px;
+  width:428px;
+  margin:0px auto 25px 19px;
+  color:var(--textcolor);
+}
+#txt1{
+
+  margin-bottom: 33px;
+}
+
+/*Attention*/
+
+#attention{
+border:1px solid;
+  width:129px;
+  grid-area:4/3;
+  margin-top:-30px;
+}
+#attention h1{
+
+  font-family: 'Inter', sans-serif;
+  font-weight:600;
+  color:#34c759;
+  font-size: 32px;
+}
+#attention img{
+display:flex;
+width:50px;
+margin:9px auto 0px;
+z-index: 1;
+}
