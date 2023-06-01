@@ -4,7 +4,7 @@
 Meu "currículo" digital que conta com minhas informações e expêriencias (projetos), de forma mais bonita e completa.
 </p>
 <p align="center">
-<a  href="#projeto">Projeto</a>
+<a  href="#Projeto">Projeto</a>
 -
 <a href="#tecnologias">Tecnologias</a>
 -
@@ -12,7 +12,7 @@ Meu "currículo" digital que conta com minhas informações e expêriencias (pro
 -
 <a href="https://www.figma.com/file/ClualEqstvVRZk2lEK9Syj/Portf%C3%B3lio?node-id=0%3A1&t=G7HEddXXXL10RrKA-1">Figma</a>
 -
-<a href="#">Ver projeto</a></p>
+<a href="https://guilhermesandrade.github.io/Portfolio/">Ver projeto</a></p>
 
 </br>
 
@@ -23,7 +23,7 @@ Meu "currículo" digital que conta com minhas informações e expêriencias (pro
 <h1 align="center" id="projeto"> 📚Projeto </h1>
 
 <p align="center">Neste projeto será criado a minha página de portifólio onde, irá conter informações sobre mim como um currículo e também será adicionado todos os meus projetos já criados.
-Basicamente será um espaço onde todos possam conhecer a mim e aos meus projetos desenvolvidos! <a href="#">Ver projeto</a> </p>
+Basicamente será um espaço onde todos possam conhecer a mim e aos meus projetos desenvolvidos! <a href="https://guilhermesandrade.github.io/Portfolio/">Ver projeto</a> </p>
 
 </br>
 
