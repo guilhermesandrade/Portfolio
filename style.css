@@ -414,7 +414,7 @@ body {
   position: relative;
 
   animation: slide-bottom 0.8s linear infinite;
-  animation-direction:alternate;
+  animation-direction: alternate;
 }
 
 /* keyframes attention arrow */
@@ -426,4 +426,98 @@ body {
   to {
     top: 10px;
   }
+}
+
+/* Projects */
+
+#projects {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+/* project title*/
+
+#projtitle {
+  display: flex;
+  color: #34c759;
+}
+
+#projtitle img {
+  width: 50px;
+  margin-right: 13px;
+}
+#projtitle h1 {
+  font-size: 40px;
+  height: 40px;
+  align-content: center;
+}
+
+/* Project links */
+#projectlink {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 625px;
+}
+
+#p1 {
+  display: flex;
+  flex-direction: row;
+}
+#p2 {
+  display: flex;
+  flex-direction: row;
+}
+#projectlink a {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background: var(--bgswitch);
+  margin: 0px 25px 25px 0px;
+  text-decoration-line: none;
+}
+
+#projectlink img {
+  width: 300px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 21px;
+}
+
+#projectlink p {
+  display: flex;
+  font-size: 30px;
+  color: var(--textcolor);
+  justify-content: center;
+}
+
+/*footer*/
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  color: var(--iconcolor);
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+#dev {
+  display: flex;
+  justify-content: flex-end;
+  grid-area: 1/2;
+}
+#advice {
+  display: flex;
+  justify-content: flex-end;
+  grid-area: 2/2;
+}
+#advice ion-icon {
+  display: flex;
+  align-self: center;
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
 }
