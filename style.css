@@ -297,6 +297,11 @@ body {
   font-size: 20px;
   font-weight: 300;
 }
+#city:hover{
+transition:transform 0.5s;
+  transform:scale(1.1);
+  border: 2px solid #34c759;
+}
 
 /*hard skills*/
 #hardskills {
@@ -327,7 +332,7 @@ body {
   font-weight: 400;
   color: #34c759;
 }
-
+/*hardskills icons*/
 #icons {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -372,6 +377,12 @@ body {
   width: 50px;
   height: 50px;
   grid-area: 3/2;
+}
+
+#hardskills:hover{
+transition:transform 0.5s;
+  transform:scale(1.1);
+  border: 2px solid #34c759;
 }
 
 /*Languages*/
@@ -426,6 +437,11 @@ body {
 #usa {
   grid-area: 1/2;
 }
+#languages:hover{
+transition:transform 0.5s;
+  transform:scale(1.1);
+  border: 2px solid #34c759;
+}
 
 /*Softskills*/
 
@@ -465,6 +481,11 @@ body {
   justify-content: center;
   margin-bottom: 23px;
 }
+#softskills:hover{
+transition:transform 0.5s;
+  transform:scale(1.1);
+  border: 2px solid #34c759;
+}
 
 /*about me*/
 
@@ -490,6 +511,11 @@ body {
 }
 #txt1 {
   margin-bottom: 33px;
+}
+#aboutme:hover{
+transition:transform 0.5s;
+  transform:scale(1.1);
+  border: 2px solid #34c759;
 }
 
 /*Attention*/
