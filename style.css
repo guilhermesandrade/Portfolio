@@ -298,7 +298,7 @@ body {
   font-weight: 300;
 }
 #city:hover{
-transition:transform 0.5s;
+transition:transform 0.5s ease-out;
   transform:scale(1.1);
   border: 2px solid #34c759;
 }
@@ -380,7 +380,7 @@ transition:transform 0.5s;
 }
 
 #hardskills:hover{
-transition:transform 0.5s;
+transition:transform 0.5s ease-out;
   transform:scale(1.1);
   border: 2px solid #34c759;
 }
@@ -438,7 +438,7 @@ transition:transform 0.5s;
   grid-area: 1/2;
 }
 #languages:hover{
-transition:transform 0.5s;
+transition:transform 0.5s ease-out;
   transform:scale(1.1);
   border: 2px solid #34c759;
 }
@@ -482,7 +482,7 @@ transition:transform 0.5s;
   margin-bottom: 23px;
 }
 #softskills:hover{
-transition:transform 0.5s;
+transition:transform 0.5s ease-out;
   transform:scale(1.1);
   border: 2px solid #34c759;
 }
@@ -513,7 +513,7 @@ transition:transform 0.5s;
   margin-bottom: 33px;
 }
 #aboutme:hover{
-transition:transform 0.5s;
+transition:transform 0.5s ease-out;
   transform:scale(1.1);
   border: 2px solid #34c759;
 }
