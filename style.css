@@ -619,6 +619,13 @@ margin:-30px 0px 0px 65px;
   justify-content: center;
 }
 
+#projectlink a:hover{
+
+  transition: 0.5s;
+  background:#34c759;
+  transform:scale(1.1);
+}
+
 /*footer*/
 
 footer {
